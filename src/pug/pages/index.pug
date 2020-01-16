@@ -17,17 +17,18 @@ html(lang="ru-RU")
                 // Контейнер песни
                 .song
                     .row
-                        .col-2
+
+                        div(class="image")
                             img(src="static/img/credo.png" alt="img")
-                        .col-7
+                        div(class="title")
                             h2 Credo
                             h3 Ziviert
-                        .col-1
+                        div(class="super-star")
                             div(class="star")
                                 img(class="star-star star-img" id="star1" onclick="down('#star1', '#star2')" src="static/img/star.png" alt="star")
                                 img(class="star-star noActive"  id="star2" onclick="down('#star2', '#star1')" src="static/img/starActive.png" alt="star")
 
-                        .col-1
+                        div(class="time")
                             h3(class="time") 1:45
                     div.play-band
                         div.play-band-progress

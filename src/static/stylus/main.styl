@@ -9,7 +9,11 @@ fontsStyle(color = white, font = fonts)
 
 
 .container
+  max-width 960px
   background: linear-gradient(to top, #3a3b57, #364a57)
+  .row
+    margin 0
+
   h1
     fontsStyle()
     //font-family fonts
@@ -22,14 +26,24 @@ fontsStyle(color = white, font = fonts)
   .music
     margin-left 30px
     margin-right 35px
-    .col-7
+    .title
+      position relative
+      top 10px
+      width 85%
+      margin-left 10px
+      z-index 10
+
+      h2
+        margin-bottom 0
+    .image
+      position relative
+      top 14px
       z-index 10
     .song
       margin-bottom 30px
-    .col-2
+    .super-star
       z-index 10
-    .time
-      padding-top 30%
+
     h2
       fontsStyle()
       //font-family fonts
@@ -74,5 +88,7 @@ fontsStyle(color = white, font = fonts)
   display block
 .noActive
   display none
-
-
+.title
+  float left
+.img
+  float left
