@@ -9,7 +9,12 @@ fontsStyle(color = white, font = fonts)
 
 
 .container
+  max-width 960px
+  min-width 320px
   background: linear-gradient(to top, #3a3b57, #364a57)
+  .row
+    margin 0
+
   h1
     fontsStyle()
     //font-family fonts
@@ -22,14 +27,30 @@ fontsStyle(color = white, font = fonts)
   .music
     margin-left 30px
     margin-right 35px
-    .col-7
+    .title
+      position relative
+      top 10px
+      margin-left 10px
       z-index 10
+
+      h2
+        margin-bottom 0
+    .image
+      position relative
+      top 14px
+      z-index 10
+      img
+        border-radius 10px
+    .col-1
+
     .song
+      text-transform uppercase
       margin-bottom 30px
-    .col-2
+
+
+    .super-star
       z-index 10
-    .time
-      padding-top 30%
+
     h2
       fontsStyle()
       //font-family fonts
@@ -59,7 +80,11 @@ fontsStyle(color = white, font = fonts)
         background linear-gradient(to top, rgba(255, 108, 0, 0.5), rgba(71, 74, 80, 0))
         z-index 1
     .star
+      float right
+      width 75px
+      height 62px
       position relative
+      top 6px
       img
         position absolute
       .star-img
@@ -67,12 +92,28 @@ fontsStyle(color = white, font = fonts)
         left 27px
         top 20px
       .star-star
+        transform rotate(0deg)
+        transition-duration 300ms
         cursor pointer
+        &:hover
+          transform rotate(360deg)
+          transition-duration 300ms
+  .time-time
+    float right
 
+  .time
+    position relative
+    top 22px
+.music:last-child
+  padding-bottom 91px
 
 .active
   display block
 .noActive
   display none
-
-
+.image
+  float left
+.title
+  float left
+.clear
+  clear both

@@ -4,4 +4,3 @@ function down(star, star1){
     $(star1).show(300);
 }
 
-
